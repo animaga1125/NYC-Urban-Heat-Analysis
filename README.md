@@ -3,7 +3,7 @@ Geospatial analysis of persistent urban heat and environmental vulnerability acr
 
 ### A Geospatial Data Analytics & Urban Climate Resilience Project
 
-![Uploading NYC Persistent Heat Hotspots and Priority Neighborhoods Summer Land Temperature, 2022-2025.png…]()
+<img width="947" height="1085" alt="NYC Persistent Heat Hotspots and Priority Neighborhoods Summer Land Temperature, 2022-2025" src="https://github.com/user-attachments/assets/13d137d2-e008-4d5e-afe7-1a6a66edaa6d" />
 
 
 ## Project Overview

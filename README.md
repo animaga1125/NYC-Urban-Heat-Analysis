@@ -3,6 +3,9 @@ Geospatial analysis of persistent urban heat and environmental vulnerability acr
 
 ### A Geospatial Data Analytics & Urban Climate Resilience Project
 
+![Uploading NYC Persistent Heat Hotspots and Priority Neighborhoods Summer Land Temperature, 2022-2025.png…]()
+
+
 ## Project Overview
 
 This independent research project investigates persistent summer land surface temperature (LST) patterns across New York City from 2022 to 2025.

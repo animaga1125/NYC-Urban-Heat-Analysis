@@ -123,3 +123,20 @@ The results can help guide further assessment of:
 ## Author
 
 Independent research project focused on applying data analytics, geospatial technologies, and urban sustainability principles to climate-resilience challenges.
+
+## Data Sources
+
+This project integrates publicly available satellite imagery, environmental land-cover datasets, geographic boundaries, and socioeconomic indicators.
+
+| Data Source | Purpose |
+|---|---|
+| Landsat 8/9 Collection 2 Level-2 | Summer land surface temperature and vegetation analysis, 2022–2025 |
+| NYC Neighborhood Tabulation Areas (2020) | Geographic boundaries for 197 neighborhoods |
+| U.S. Census ACS 2024 5-Year Estimates | Poverty rates and population aged 65+ |
+| National Land Cover Database (2021) | Impervious surface coverage |
+| JRC Global Surface Water | Water masking in the primary analysis |
+| ESA WorldCover | Additional permanent-water masking for sensitivity validation |
+
+Satellite imagery was processed using Google Earth Engine. Environmental and socioeconomic indicators were integrated at the neighborhood level using Python and geospatial analysis.
+
+**Data considerations:** These datasets represent different collection periods. Satellite-derived land surface temperature measures surface conditions rather than ambient air temperature, and neighborhood-level relationships should not be interpreted as causal effects.

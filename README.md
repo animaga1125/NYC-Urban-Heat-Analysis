@@ -140,3 +140,58 @@ This project integrates publicly available satellite imagery, environmental land
 Satellite imagery was processed using Google Earth Engine. Environmental and socioeconomic indicators were integrated at the neighborhood level using Python and geospatial analysis.
 
 **Data considerations:** These datasets represent different collection periods. Satellite-derived land surface temperature measures surface conditions rather than ambient air temperature, and neighborhood-level relationships should not be interpreted as causal effects.
+
+## How to Run the Analysis
+
+### Requirements
+
+- Google account with access to Google Colab
+- Google Earth Engine access and a configured Google Cloud project
+- Python 3 environment
+- Required Python packages, as listed in `requirements.txt`
+- Access to the public environmental and socioeconomic datasets referenced in the notebook
+
+### Execution Instructions
+
+**1. Open the notebook**
+
+Navigate to the `notebooks/` folder and open `NYC_Urban_Heat_Analysis.ipynb` in Google Colab.
+
+**2. Install dependencies**
+
+Run the notebook's dependency installation cells, or install the packages listed in `requirements.txt`:
+
+```python
+!pip install -r requirements.txt
+```
+
+Upload `requirements.txt` to the Colab session first, or adjust the path to where the file is stored.
+
+**3. Authenticate Google Earth Engine**
+
+```python
+import ee
+
+ee.Authenticate()
+ee.Initialize(project="YOUR_GOOGLE_CLOUD_PROJECT_ID")
+```
+
+Replace the placeholder with your own configured Google Cloud project ID.
+
+**4. Configure data inputs**
+
+Review the notebook's input paths and dataset references. Download or access any required geographic boundaries, Census data, and environmental datasets using the sources documented above.
+
+**5. Execute the analysis**
+
+Run the notebook cells in their documented order to reproduce the available stages of satellite processing, neighborhood-level aggregation, hotspot classification, socioeconomic analysis, statistical comparisons, and sensitivity validation.
+
+**6. Review outputs**
+
+The repository's `figures/`, `results/`, and `reports/` directories contain the final visualizations, summary datasets, and written findings.
+
+### Reproducibility Notes
+
+Reproducing the analysis requires the same geographic definitions, satellite processing parameters, classification thresholds, and source datasets used in the original project. Some Earth Engine processing stages may require substantial computation time.
+
+The provided outputs document the completed analysis; exact reproducibility depends on the availability and configuration of all referenced inputs.
